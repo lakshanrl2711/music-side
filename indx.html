@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Music Downloads</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🎵 My Music</h1>
+  <p>Original Songs & Beats</p>
+</header>
+
+<section class="about">
+  <img src="https://i.imgur.com/4ZQZ4Zy.png" alt="Artist" class="artist-img">
+  <h2>About Me</h2>
+  <p>
+    I am an independent music creator from Sri Lanka 🇱🇰.
+    I create original songs and beats. You can listen, stream
+    and download my music for free.
+  </p>
+</section>
+
+<div class="music-container">
+
+  <div class="card">
+    <h3>Song One</h3>
+    <audio controls>
+      <source src="music/song1.mp3" type="audio/mpeg">
+    </audio>
+    <p>Downloads: <span class="download-count" data-song="song1">0</span></p>
+    <div class="btn-group">
+      <a href="music/song1.mp3" download onclick="increase('song1')" class="btn">⬇ Download</a>
+      <a href="https://wa.me/?text=Listen%20to%20this%20song" target="_blank" class="btn share">📲 Share</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Song Two</h3>
+    <audio controls>
+      <source src="music/song2.mp3" type="audio/mpeg">
+    </audio>
+    <p>Downloads: <span class="download-count" data-song="song2">0</span></p>
+    <div class="btn-group">
+      <a href="music/song2.mp3" download onclick="increase('song2')" class="btn">⬇ Download</a>
+      <a href="https://wa.me/?text=Listen%20to%20this%20song" target="_blank" class="btn share">📲 Share</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 My Music | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
